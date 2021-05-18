@@ -24,8 +24,14 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Fake data
+gem 'faker'
+
 # JWT
 gem 'jwt'
+
+# Pagination
+gem 'will_paginate'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -39,7 +45,6 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'faker'
   gem 'shoulda-matchers', '~> 3.1'
  end
 

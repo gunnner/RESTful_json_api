@@ -6,7 +6,7 @@ RSpec.describe 'Authentication', type: :request do
     # create test user
     let!(:user) { create(:user) }
     # set headers for authentication
-    let(:headers) { valid_headers.expect('Authorization') }
+    let(:headers) { valid_headers.except('Authorization') }
     # set test valid and invalid credentials
     let(:valid_credentials) do
       {
